@@ -35,7 +35,14 @@ body {
   border-radius: 10px;
 }
 
-.box-top-left,
+.box-top-left {
+  position: absolute;
+  width: 40%;
+  height: 15%;
+  background: #f8f8d8;
+  border: 6px solid #506860;
+  border-radius: 10px;
+}
 .box-bottom-right {
   position: absolute;
   width: 40%;
@@ -43,6 +50,7 @@ body {
   background: #f8f8d8;
   border: 6px solid #506860;
   border-radius: 10px;
+  margin-bottom: 6%;
 }
 
 .box-top-left {
@@ -87,13 +95,21 @@ body {
   font-size: 16px;
 }
 
-.box-top-right,
+.box-top-right {
+  position: absolute;
+  width: 40%;
+  height: 25%;
+  background: #e0e0e0;
+  border-radius: 50%;
+  margin-top: 3%;
+}
 .box-bottom-left {
   position: absolute;
   width: 40%;
   height: 25%;
   background: #e0e0e0;
   border-radius: 50%;
+  margin-bottom: 6%;
 }
 
 .box-top-right {
