@@ -79,7 +79,7 @@ body {
 .hp-bar-top,
 .hp-bar-bottom {
   position: relative;
-  height: 20%;
+  height: 50%;
   width: 70%;
   margin-left: 10%;
   margin-top: 10%;
@@ -139,14 +139,14 @@ body {
   position: absolute;
   width: 50%;
   height: auto;
-  top: 10%;
+  top: 15%;
   left: 25%;
 }
 .pokemon-bottom {
   position: absolute;
   width: 50%;
   height: auto;
-  top: 10%;
+  top: auto;
   left: 25%;
 }
 
@@ -159,21 +159,26 @@ body {
   border-top: 6px solid #ceb46d;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
 }
 
 .text-box-left {
-  width: 60%;
+  width: 100%;
   padding: 10px;
   color: white;
   font-size: 18px;
   font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
 }
 
 .text-box-right {
-  width: 40%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .battle-button {
