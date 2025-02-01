@@ -1,52 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon Battle</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="test.css" />
   </head>
+
   <body>
-    <div id="app">
-      <h1 class="title">Pokemon Battle</h1>
-      <div class="battle-scene">
-        <div class="box-top-left">
-          <h2 class="pokemon">Computer</h2>
-          <div class="hp-bar-top">
-            <div class="hp-bar-fill" style="width: 100%"></div>
+    <main class="min-vh-100 d-flex align-items-center justify-content-center">
+      <div id="app" class="container">
+        <h1 class="title text-center mb-4">Pokemon Battle</h1>
+        <div class="battle-scene">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="box-top-left p-3">
+                <h2 class="pokemon">Computer</h2>
+                <div class="hp-bar-top">
+                  <div class="hp-bar-fill" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="box-top-right d-flex justify-content-center">
+                <img
+                  src="https://picsum.photos/100"
+                  alt="Opponent Pokemon"
+                  class="pokemon-top img-fluid"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="box-top-right">
-          <img
-            src="https://picsum.photos/100"
-            alt="Opponent Pokemon"
-            class="pokemon-top"
-          />
-        </div>
-        <div class="box-bottom-left">
-          <img
-            src="https://picsum.photos/100"
-            alt="Player Pokemon"
-            class="pokemon-bottom"
-          />
-        </div>
-        <div class="box-bottom-right">
-          <h2 class="pokemon">Player</h2>
-          <div class="hp-bar-bottom">
-            <div class="hp-bar-fill" style="width: 100%"></div>
+
+          <div class="row my-4">
+            <div class="col-md-6">
+              <div class="box-bottom-left d-flex justify-content-center">
+                <img
+                  src="https://picsum.photos/100"
+                  alt="Player Pokemon"
+                  class="pokemon-bottom img-fluid"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="box-bottom-right p-3">
+                <h2 class="pokemon">Player</h2>
+                <div class="hp-bar-bottom">
+                  <div class="hp-bar-fill" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="bottom-menu">
-          <div class="text-box-left">
-            <p class="battle-text">What Will You Choose?</p>
-          </div>
-          <div class="text-box-right">
-            <button class="battle-button">Grass</button>
-            <button class="battle-button">Fire</button>
-            <button class="battle-button">Water</button>
+
+          <div class="bottom-menu mt-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="text-box-left">
+                  <p class="battle-text mb-0">What Will You Choose?</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="text-box-right d-flex justify-content-around">
+                  <button class="battle-button btn">Grass</button>
+                  <button class="battle-button btn">Fire</button>
+                  <button class="battle-button btn">Water</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </main>
+
+    <script src="game.js"></script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
